@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Retro Pixel Cute Mono';
+    src: url('assets/retro-pixel-cute-mono.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+      width: 80%;
+    }
+    nav {
+        text-align: center;
+    }
+}
+
+body {
+    background-color: #0F0F0F;
+    color:#cacaca;
+    font-family: 'Retro Pixel Cute Mono';
+    font-size: 30px;
+    padding-top: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+a {
+    color: #8aacab;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.eightyonebythirtyone {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 31;
+    width: 50%;
+}
+
+.typing {
+    font-size: 30px;
+    overflow: hidden;
+    border-right: .50em solid #cacaca;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #cacaca; }
+}
